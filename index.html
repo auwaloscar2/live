@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Shop – Online Book Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin:0; font-family:'Poppins',sans-serif; background:#f5f7fb; color:#333; }
+    header { background:linear-gradient(135deg,#1e3c72,#2a5298); color:#fff; padding:20px 30px; display:flex; justify-content:space-between; align-items:center; }
+    .logo { font-size:26px; font-weight:600; }
+    nav a { color:#fff; margin-left:20px; text-decoration:none; font-weight:400; }
+    nav a:hover { text-decoration:underline; }
+    .hero { padding:60px 20px; text-align:center; background:#fff; }
+    .hero h1 { font-size:36px; margin-bottom:10px; }
+    .hero p { font-size:16px; color:#666; }
+    .container { padding:40px 20px; max-width:1100px; margin:auto; }
+    .section-title { font-size:24px; margin-bottom:20px; text-align:center; }
+    .books { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:25px; }
+    .book { background:#fff; border-radius:12px; padding:20px; box-shadow:0 10px 25px rgba(0,0,0,0.08); transition:transform 0.3s; }
+    .book:hover { transform:translateY(-5px); }
+    .book h3 { margin-top:0; }
+    .price { font-size:18px; font-weight:600; color:#27ae60; }
+    .btn { display:inline-block; margin-top:15px; padding:10px 16px; border-radius:6px; background:#27ae60; color:#fff; text-decoration:none; font-size:14px; }
+    .btn:hover { background:#219150; }
+    .payment-box { background:#f0f3ff; padding:15px; border-radius:8px; margin-top:15px; font-size:14px; }
+    .auth, .upload, .admin, .ads { background:#fff; padding:25px; border-radius:12px; box-shadow:0 10px 25px rgba(0,0,0,0.08); margin-top:30px; }
+    input, button { width:100%; padding:10px; margin-top:10px; border-radius:6px; border:1px solid #ccc; font-family:'Poppins'; }
+    button { background:#2a5298; color:#fff; border:none; cursor:pointer; }
+    button:hover { background:#1e3c72; }
+    footer { background:#1e3c72; color:#fff; text-align:center; padding:20px; margin-top:50px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Muhammad Shop</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#books">Books</a>
+    <a href="#login">Login</a>
+    <a href="#upload">Admin</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Buy & Download Books Online</h1>
+  <p>Secure payments • Instant access after approval • Trusted by readers</p>
+</section>
+
+<div class="container" id="books">
+  <h2 class="section-title">Available Books</h2>
+  <div class="books">
+    <div class="book">
+      <h3>The Art of War (PDF)</h3>
+      <p class="price">₦1,000</p>
+      <div class="payment-box">
+        <strong>Payment Method (OPay)</strong><br>
+        Account Number: <strong>8162517905</strong><br>
+        Account Name: Muhammad Auwal Haruna
+      </div>
+      <a class="btn" href="#">Pay & Request Download</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 Muhammad Shop. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
